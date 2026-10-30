@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '../../../components/Button';
+import { HeroVisual } from './HeroVisual';
 
 
 export const Hero = () => {
@@ -89,7 +90,7 @@ export const Hero = () => {
 
           {/* Right Column: Hero Phone Mockup matching reference (45% / 5 cols) */}
           <div className="min-[1000px]:col-span-5 flex flex-col items-center justify-center">
-            
+            <HeroVisual />
           </div>
 
         </div>
