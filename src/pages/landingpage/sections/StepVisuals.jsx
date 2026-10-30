@@ -403,15 +403,14 @@ const LiveScene = () => {
 
 export const VISUALS = [CallScene, DesignScene, ContractScene, BuildScene, LiveScene];
 
-/* ---------- Styles: final state by default, animation plays once and holds ---------- */
+/* ---------- Styles: final state by default, animations loop only if motion is allowed ---------- */
 
 export const StepVisualStyles = () => (
   <style>{`
-    .scene { --loop: 7s; }
+    .scene { --loop: 8s; }
     .mood-n, .st-a, .st-mid, .fly, .cap, .ring-expert, .ring-client, .confetti { opacity: 0; }
     .mood-h { opacity: 1; }
     .cap:last-child { opacity: 1; }
-    .ring-client { opacity: 1; }
     .prog { width: 65%; }
     .sig { stroke-dashoffset: 0; }
 
@@ -419,68 +418,64 @@ export const StepVisualStyles = () => (
       .step-in { animation: step-in .55s cubic-bezier(.22,1,.36,1) both; }
       @keyframes step-in { from { opacity: 0; transform: translateY(16px) scale(.97); } to { opacity: 1; transform: none; } }
 
-      /* The only thing that keeps looping: the subtle "live" blink */
       .live-dot { animation: blink 1.4s ease-in-out infinite; }
       @keyframes blink { 50% { opacity: .3; } }
 
-      /* Everything below runs once and holds its last keyframe */
-      .mood-n { opacity: 1; animation: moodN var(--loop) both; }
-      .mood-h { opacity: 0; animation: moodH var(--loop) both; }
-      @keyframes moodN { 0%, 55% { opacity: 1; } 60%, 100% { opacity: 0; } }
-      @keyframes moodH { 0%, 55% { opacity: 0; } 60%, 100% { opacity: 1; } }
+      .mood-n { opacity: 1; animation: moodN var(--loop) infinite; }
+      .mood-h { opacity: 0; animation: moodH var(--loop) infinite; }
+      @keyframes moodN { 0%, 55% { opacity: 1; } 60%, 96% { opacity: 0; } 100% { opacity: 1; } }
+      @keyframes moodH { 0%, 55% { opacity: 0; } 60%, 96% { opacity: 1; } 100% { opacity: 0; } }
 
-      .cap { animation: cap var(--loop) both; }
-      .cap:last-child { animation-name: capLast; }
+      .cap { animation: cap var(--loop) infinite both; }
       @keyframes cap { 0% { opacity: 0; } 3%, 30% { opacity: 1; } 33%, 100% { opacity: 0; } }
-      @keyframes capLast { 0% { opacity: 0; } 3%, 100% { opacity: 1; } }
-      .ring-expert { animation: ringE var(--loop) both; }
-      .ring-client { animation: ringC var(--loop) both; }
+      .ring-expert { animation: ringE var(--loop) infinite; }
+      .ring-client { animation: ringC var(--loop) infinite; }
       @keyframes ringE { 0%, 31% { opacity: 0; } 33%, 64% { opacity: 1; } 66%, 100% { opacity: 0; } }
       @keyframes ringC { 0%, 30% { opacity: 1; } 33%, 64% { opacity: 0; } 66%, 100% { opacity: 1; } }
 
-      .note { animation: pop var(--loop) both; }
-      @keyframes pop { 0% { opacity: 0; transform: scale(.85); } 4%, 100% { opacity: 1; transform: scale(1); } }
+      .note { animation: pop var(--loop) infinite both; }
+      @keyframes pop { 0% { opacity: 0; transform: scale(.85); } 4% { opacity: 1; transform: scale(1); } 92% { opacity: 1; } 100% { opacity: 0; } }
 
-      .fly { animation: fly var(--loop) both; }
+      .fly { animation: fly var(--loop) infinite both; }
       @keyframes fly {
         0% { opacity: 0; inset-inline-start: 0; }
         6% { opacity: 1; }
         38% { opacity: 1; inset-inline-start: calc(100% - 3rem); }
         44%, 100% { opacity: 0; inset-inline-start: calc(100% - 3rem); }
       }
-      .arrive { animation: arrive var(--loop) both; }
-      @keyframes arrive { 0%, 42% { opacity: 0; } 48%, 100% { opacity: 1; } }
+      .arrive { animation: arrive var(--loop) infinite both; }
+      @keyframes arrive { 0%, 42% { opacity: 0; } 48%, 94% { opacity: 1; } 100% { opacity: 0; } }
 
-      .stamp, .bubble, .late { animation: late var(--loop) both; }
-      @keyframes late { 0%, 56% { opacity: 0; transform: scale(.6); } 62%, 100% { opacity: 1; transform: scale(1); } }
-      .stamp-mid { animation: mid var(--loop) both; }
-      @keyframes mid { 0%, 42% { opacity: 0; transform: scale(.6); } 48%, 100% { opacity: 1; transform: scale(1); } }
+      .stamp, .bubble, .late { animation: late var(--loop) infinite both; }
+      @keyframes late { 0%, 56% { opacity: 0; transform: scale(.6); } 62%, 94% { opacity: 1; transform: scale(1); } 100% { opacity: 0; } }
+      .stamp-mid { animation: mid var(--loop) infinite both; }
+      @keyframes mid { 0%, 42% { opacity: 0; transform: scale(.6); } 48%, 94% { opacity: 1; transform: scale(1); } 100% { opacity: 0; } }
 
-      .st-a { animation: stA var(--loop) both; }
-      .st-mid { animation: stM var(--loop) both; }
-      .st-b { animation: stB var(--loop) both; }
+      .st-a { animation: stA var(--loop) infinite both; }
+      .st-mid { animation: stM var(--loop) infinite both; }
+      .st-b { animation: stB var(--loop) infinite both; }
       @keyframes stA { 0% { opacity: 0; } 4%, 40% { opacity: 1; } 46%, 100% { opacity: 0; } }
       @keyframes stM { 0%, 44% { opacity: 0; } 48%, 57% { opacity: 1; } 61%, 100% { opacity: 0; } }
-      @keyframes stB { 0%, 58% { opacity: 0; } 62%, 100% { opacity: 1; } }
+      @keyframes stB { 0%, 58% { opacity: 0; } 62%, 94% { opacity: 1; } 100% { opacity: 0; } }
 
-      .sheet { animation: sheet var(--loop) both; }
-      @keyframes sheet { 0% { opacity: 0; transform: scale(.92); } 6%, 100% { opacity: 1; transform: scale(1); } }
-      .sig { animation: sig var(--loop) both; }
-      @keyframes sig { 0%, 22% { stroke-dashoffset: 1; } 42%, 100% { stroke-dashoffset: 0; } }
+      .sheet { animation: sheet var(--loop) infinite both; }
+      @keyframes sheet { 0% { opacity: 0; transform: scale(.92); } 6% { opacity: 1; transform: scale(1); } 94% { opacity: 1; } 100% { opacity: 0; } }
+      .sig { animation: sig var(--loop) infinite both; }
+      @keyframes sig { 0%, 22% { stroke-dashoffset: 1; } 42%, 96% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
 
-      .code { transform-origin: left; animation: code var(--loop) both; }
-      @keyframes code { 0% { transform: scaleX(0); } 14%, 100% { transform: scaleX(1); } }
-      .task { animation: task var(--loop) both; }
-      @keyframes task { 0%, 4% { background: rgba(255,255,255,.2); } 8%, 100% { background: #22B893; } }
-      .prog { animation: prog var(--loop) both; }
-      @keyframes prog { 0% { width: 0; } 85%, 100% { width: 65%; } }
+      .code { transform-origin: left; animation: code var(--loop) infinite both; }
+      @keyframes code { 0% { transform: scaleX(0); } 14%, 90% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+      .task { animation: task var(--loop) infinite both; }
+      @keyframes task { 0%, 4% { background: rgba(255,255,255,.2); } 8%, 92% { background: #22B893; } 100% { background: rgba(255,255,255,.2); } }
+      .prog { animation: prog var(--loop) infinite both; }
+      @keyframes prog { 0% { width: 0; } 85%, 96% { width: 65%; } 100% { width: 0; } }
 
-      .star { animation: star var(--loop) both; }
-      @keyframes star { 0%, 30% { opacity: .25; transform: scale(.8); } 36% { opacity: 1; transform: scale(1.15); } 40%, 100% { opacity: 1; transform: scale(1); } }
-      .fb { animation: fb var(--loop) both; }
-      @keyframes fb { 0%, 40% { opacity: 0; } 48%, 100% { opacity: 1; } }
-      .confetti { animation: confetti var(--loop) both; }
-      @keyframes confetti { 0% { opacity: 0; transform: translateY(-8px) rotate(0); } 6% { opacity: 1; } 30%, 100% { opacity: 0; transform: translateY(120px) rotate(200deg); } }
+      .star { animation: star var(--loop) infinite both; }
+      @keyframes star { 0%, 30% { opacity: .25; transform: scale(.8); } 36% { opacity: 1; transform: scale(1.15); } 40%, 94% { opacity: 1; transform: scale(1); } 100% { opacity: .25; } }
+      .fb { animation: fb var(--loop) infinite both; }
+      @keyframes fb { 0%, 40% { opacity: 0; } 48%, 94% { opacity: 1; } 100% { opacity: 0; } }
+      .confetti { animation: confetti var(--loop) infinite both; }
+      @keyframes confetti { 0% { opacity: 0; transform: translateY(-8px) rotate(0); } 6% { opacity: 1; } 30% { opacity: 0; transform: translateY(120px) rotate(200deg); } 100% { opacity: 0; } }
     }
   `}</style>
 );
