@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 /**
  * Right column of the Hero — an animated phone that tells the whole service
  * in 3 scenes, on a loop:
- *   1. Tell us      – pick your business type, type your name
+ *   1. Tell us      – pick your business type (Restaurant), type your name
  *   2. We build     – a site assembles itself, checklist ticks off
  *   3. You launch   – the site goes live, first customer message arrives
  *
@@ -15,6 +15,7 @@ import { useTranslation } from 'react-i18next';
  */
 
 const STEP_MS = 4200;
+const DISH_BG = ['bg-[#FFD9C4]', 'bg-[#EADFD2]', 'bg-[#FFE9A8]'];
 
 export const HeroVisual = () => {
   const { t, i18n } = useTranslation();
@@ -53,9 +54,15 @@ export const HeroVisual = () => {
     t('hero.visual.sector4', { defaultValue: 'Shop' }),
   ];
 
+  const dishes = [
+    t('hero.visual.dish1', { defaultValue: 'Couscous' }),
+    t('hero.visual.dish2', { defaultValue: 'Chorba' }),
+    t('hero.visual.dish3', { defaultValue: 'Rechta' }),
+  ];
+
   const checks = [
-    t('hero.visual.check1', { defaultValue: 'Design' }),
-    t('hero.visual.check2', { defaultValue: 'Pages' }),
+    t('hero.visual.check1', { defaultValue: 'Online menu' }),
+    t('hero.visual.check2', { defaultValue: 'Table booking' }),
     t('hero.visual.check3', { defaultValue: 'Mobile ready' }),
     t('hero.visual.check4', { defaultValue: 'Google ready' }),
   ];
@@ -118,7 +125,7 @@ export const HeroVisual = () => {
 
               <div className="mt-4 flex flex-wrap gap-2">
                 {sectors.map((s, i) => {
-                  const chosen = i === 1;
+                  const chosen = i === 0; // Restaurant
                   return (
                     <span
                       key={s}
@@ -140,7 +147,7 @@ export const HeroVisual = () => {
               </p>
               <div className="hv-in mt-1 rounded-xl border border-[#1E4DD8] bg-white px-3 py-2.5" style={{ animationDelay: '550ms' }}>
                 <span className="hv-type inline-block text-[13px] font-semibold text-[#1B1F2A]" style={{ animationDelay: '1000ms' }}>
-                  {t('hero.visual.s1Name', { defaultValue: 'Nour Bakery' })}
+                  {t('hero.visual.s1Name', { defaultValue: 'Nour Restaurant' })}
                 </span>
               </div>
 
@@ -162,9 +169,11 @@ export const HeroVisual = () => {
                 <div className="hv-in h-3 w-1/2 rounded bg-[#1B1F2A]" style={{ animationDelay: '100ms' }} />
                 <div className="hv-in h-16 rounded-xl bg-[#1E4DD8]" style={{ animationDelay: '500ms' }} />
                 <div className="hv-in grid grid-cols-3 gap-2" style={{ animationDelay: '900ms' }}>
-                  <div className="h-10 rounded-lg bg-[#FFD9C4]" />
-                  <div className="h-10 rounded-lg bg-[#EADFD2]" />
-                  <div className="h-10 rounded-lg bg-[#FFE9A8]" />
+                  {DISH_BG.map((bg) => (
+                    <div key={bg} className={`flex h-10 items-center justify-center rounded-lg ${bg}`}>
+                      <span className="h-5 w-5 rounded-full bg-white/70" />
+                    </div>
+                  ))}
                 </div>
                 <div className="hv-in h-6 rounded-full bg-[#FF7A3D]" style={{ animationDelay: '1300ms' }} />
               </div>
@@ -200,8 +209,8 @@ export const HeroVisual = () => {
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v12H8l-4 4z" /></svg>
                 </span>
                 <div className="min-w-0">
-                  <p className="text-[11px] font-bold leading-tight">{t('hero.visual.toast', { defaultValue: 'New customer message' })}</p>
-                  <p className="text-[10px] text-white/70 truncate">{t('hero.visual.toastBody', { defaultValue: '“Can I order 20 croissants?”' })}</p>
+                  <p className="text-[11px] font-bold leading-tight">{t('hero.visual.toast', { defaultValue: 'New booking' })}</p>
+                  <p className="text-[10px] text-white/70 truncate">{t('hero.visual.toastBody', { defaultValue: 'Table for 4 · tonight, 8 pm' })}</p>
                 </div>
               </div>
 
@@ -209,7 +218,7 @@ export const HeroVisual = () => {
               <div className="mt-8 rounded-2xl bg-white border border-[#EADFD2] overflow-hidden">
                 <div className="flex items-center gap-2 px-3 py-2 border-b border-[#EADFD2]" dir="ltr">
                   <span className="w-2 h-2 rounded-full bg-[#3DDC84]" aria-hidden="true" />
-                  <span className="text-[10px] font-semibold text-[#6B7280]">{t('hero.visual.siteDomain', { defaultValue: 'nourbakery.com' })}</span>
+                  <span className="text-[10px] font-semibold text-[#6B7280]">{t('hero.visual.siteDomain', { defaultValue: 'restaurant-nour.dz' })}</span>
                   <span className="ms-auto rounded-full bg-[#3DDC84]/20 px-2 py-0.5 text-[9px] font-bold text-[#0F7A3C]">
                     {t('hero.visual.live', { defaultValue: 'Live' })}
                   </span>
@@ -217,19 +226,22 @@ export const HeroVisual = () => {
                 <div className="p-3">
                   <div className="relative overflow-hidden rounded-xl bg-[#1E4DD8] p-3.5 text-white">
                     <div className="absolute -end-5 -bottom-5 w-20 h-20 rounded-full bg-[#FF7A3D]" aria-hidden="true" />
-                    <p className="relative max-w-[7.5rem] text-[14px] leading-tight font-heading font-bold">{t('hero.visual.siteHeadline', { defaultValue: 'Fresh bread, ordered in a tap' })}</p>
-                    <span className="relative mt-2.5 inline-block rounded-full bg-white px-3 py-1 text-[10px] font-bold text-[#1B1F2A]">{t('hero.visual.siteBtn', { defaultValue: 'Order now' })}</span>
+                    <p className="relative max-w-[7.5rem] text-[14px] leading-tight font-heading font-bold">{t('hero.visual.siteHeadline', { defaultValue: 'Your table, booked in a tap' })}</p>
+                    <span className="relative mt-2.5 inline-block rounded-full bg-white px-3 py-1 text-[10px] font-bold text-[#1B1F2A]">{t('hero.visual.siteBtn', { defaultValue: 'Book now' })}</span>
                   </div>
                   <div className="mt-2.5 grid grid-cols-3 gap-2" aria-hidden="true">
-                    <div className="h-9 rounded-lg bg-[#FFD9C4]" />
-                    <div className="h-9 rounded-lg bg-[#EADFD2]" />
-                    <div className="h-9 rounded-lg bg-[#FFE9A8]" />
+                    {dishes.map((dish, i) => (
+                      <div key={dish} className={`flex h-12 flex-col items-center justify-center gap-1 rounded-lg ${DISH_BG[i]}`}>
+                        <span className="h-4 w-4 rounded-full bg-white/80" />
+                        <span className="text-[9px] font-semibold leading-none text-[#1B1F2A]">{dish}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
 
               <p className="hv-in mt-4 px-1 text-[15px] leading-snug font-heading font-bold text-[#1B1F2A]" style={{ animationDelay: '300ms' }}>
-                {t('hero.visual.s3Title', { defaultValue: 'Your website is live. Customers can find you.' })}
+                {t('hero.visual.s3Title', { defaultValue: 'Your website is live. Customers book online.' })}
               </p>
             </div>
           )}
