@@ -119,28 +119,37 @@ export const Steps = () => {
                   ref={(el) => (itemRefs.current[i] = el)}
                   data-index={i}
                   aria-current={active ? 'step' : undefined}
-                  className="relative flex min-h-[56vh] items-center ps-14"
+                  className="relative flex min-h-[42vh] items-center ps-14"
                 >
                   {i < TOTAL - 1 && (
                     <span
                       aria-hidden="true"
-                      className={`absolute start-4 top-1/2 h-full w-px transition-colors duration-500 ${
-                        done ? 'bg-[#FF7A3D]' : 'bg-[var(--border)]'
-                      }`}
-                    />
+                      className="absolute start-4 top-1/2 h-full w-px overflow-hidden bg-[var(--border)]"
+                    >
+                      {/* orange fill grows down the line instead of snapping */}
+                      <span
+                        className="block h-full w-full origin-top bg-[#FF7A3D] transition-transform duration-700 ease-out motion-reduce:transition-none"
+                        style={{ transform: done ? 'scaleY(1)' : 'scaleY(0)' }}
+                      />
+                    </span>
                   )}
+
                   <span
                     aria-hidden="true"
-                    className={`absolute start-0 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full font-heading text-sm font-bold transition-colors duration-300 ${
+                    className={`absolute start-0 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full font-heading text-sm font-bold transition-all duration-500 motion-reduce:transition-none ${
                       active || done
                         ? 'bg-[#FF7A3D] text-[#1B1F2A]'
                         : `border ${BORDER} ${SURFACE} ${MUTED}`
-                    }`}
+                    } ${active ? 'ring-4 ring-[#FF7A3D]/25' : ''}`}
                   >
                     {step.number}
                   </span>
 
-                  <div className={`transition-opacity duration-300 ${active ? 'opacity-100' : 'opacity-40'}`}>
+                  <div
+                    className={`transition-[opacity,transform] duration-500 ease-out motion-reduce:transition-none ${
+                      active ? 'translate-y-0 opacity-100' : 'translate-y-1 opacity-60'
+                    }`}
+                  >
                     {renderBadge(step.badge)}
                     <h3 className={`font-heading text-2xl font-bold leading-snug ${TEXT}`}>
                       <button
