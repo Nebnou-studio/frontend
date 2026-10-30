@@ -1,0 +1,211 @@
+{
+  "header": {
+    "navProjects": "Projets",
+    "navSteps": "Étapes",
+    "cta": "Réserver un appel gratuit",
+    "menuOpen": "Menu",
+    "menuClose": "Fermer",
+    "switchLang": "العربية"
+  },
+  "hero": {
+    "eyebrow": "Studio web et logiciel · Algérie",
+    "headlinePart1": "On construit votre site.",
+    "headlinePart2": "Vous suivez",
+    "headlineHighlight": "chaque étape.",
+    "paragraph": "Sites web et outils sur mesure pour les entreprises algériennes. Votre appel, votre design et votre cahier des charges sont gratuits.",
+    "primaryCta": "Réserver un appel gratuit",
+    "ghostCta": "Voir nos projets",
+    "trust1": "Appel gratuit",
+    "trust2": "Design gratuit",
+    "trust3": "Suivi en direct",
+    "mockup": {
+      "tabBefore": "Avant",
+      "tabAfter": "Après",
+      "searchPlaceholder": "Votre entreprise Alger",
+      "beforeLabel": "AVANT",
+      "beforeTitle": "Aucun site officiel trouvé.",
+      "beforeMessage": "Les concurrents prennent la place.",
+      "competitorA": "Concurrent A — Service professionnel",
+      "competitorADesc": "Découvrez nos solutions.",
+      "competitorB": "Concurrent B — Expert à Alger",
+      "competitorBDesc": "Des services adaptés à vos besoins.",
+      "afterLabel": "APRÈS",
+      "afterDomain": "votre-entreprise.dz",
+      "afterTitle": "Votre entreprise — Site officiel",
+      "afterDesc": "Découvrez nos services, nos réalisations et contactez-nous directement en ligne.",
+      "chipServices": "Services",
+      "chipContact": "Contact",
+      "chipDevis": "Devis",
+      "previewBrand": "VOTRE ENTREPRISE",
+      "previewNav": "Services · Réalisations · Contact",
+      "previewHeadline": "Des solutions digitales pour votre croissance.",
+      "previewBtn": "Demander un devis"
+    },
+    "story": {
+      "tabSearch": "1. Invisible sur le web",
+      "tabBuild": "2. Nebnou construit",
+      "tabSuccess": "3. Travail organisé",
+      "searchPlaceholder": "mon entreprise alger",
+      "notFoundBadge": "0 résultat",
+      "notFoundTitle": "Votre entreprise n’apparaît pas",
+      "notFoundDesc": "Les clients ne vous trouvent pas et achètent chez la concurrence.",
+      "lostMessage": "« Combien le prix ? » · Commandes perdues en DM",
+      "nebnouArrives": "L'équipe Nebnou intervient !",
+      "nebnouHelp": "« نبنيو معاك » — On structure votre activité",
+      "buildStep1": "Création du site web & design sur mesure",
+      "buildStep2": "Automatisation des commandes 58 wilayas",
+      "buildStep3": "Mise en ligne & visibilité Google",
+      "siteDomain": "votre-entreprise.dz",
+      "statOrders": "Commandes 100 % automatisées",
+      "statOrganized": "Gain de temps : tout est centralisé",
+      "statSales": "Chiffre d’affaires x3",
+      "feedback": "« Mon business a décollé et tout est enfin sous contrôle ! »",
+      "replay": "Rejouer l'histoire"
+    }
+  },
+  "projects": {
+    "eyebrow": "Nos projets · {{count}}",
+    "headline": "Chaque projet a sa signature.",
+    "subtitle": "Sites, boutiques et plateformes, pensés autour de chaque marque et de ses clients.",
+    "explore": "Explorer les projets ↓",
+    "filterAll": "Tous · {{count}}",
+    "filterEcommerce": "E-commerce · {{count}}",
+    "filterPlatforms": "Plateformes · {{count}}",
+    "filterShowcase": "Sites vitrines · {{count}}",
+    "displayedCount": "{{count}} projets affichés",
+    "displayedCountSingle": "1 projet affiché",
+    "liveSite": "Site en ligne",
+    "viewProject": "Voir le projet",
+    "exampleBadge": "Exemple",
+    "endQuestion": "Et si on donnait forme à votre projet ?",
+    "endCta": "Réserver un appel gratuit",
+    "trustClients": "Ils nous font confiance",
+    "items": {
+      "safir": {
+        "title": "Safir Mode — Boutique en ligne",
+        "desc": "Boutique de prêt-à-porter avec formulaire de commande express COD et calcul automatique de livraison par wilaya."
+      },
+      "clinique": {
+        "title": "Clinique El-Bahdja",
+        "desc": "Site vitrine médical bilingue avec présentation des spécialités et prise de rendez-vous en ligne simplifiée."
+      },
+      "dzfleet": {
+        "title": "DZ Fleet Logistics",
+        "desc": "Plateforme web de suivi de tournées et gestion de livraison dernier kilomètre pour transporteurs locaux."
+      },
+      "darzellige": {
+        "title": "Dar Zellige Artisanat",
+        "desc": "Catalogue en ligne et commande directe pour un atelier d'artisanat et céramique d'art traditionnel."
+      },
+      "academiadz": {
+        "title": "Académie Numérique DZ",
+        "desc": "Plateforme d'apprentissage en ligne avec inscription aux cours, espaces étudiants et certification."
+      },
+      "cabinet": {
+        "title": "Cabinet Benali & Associés",
+        "desc": "Site vitrine institutionnel pour un cabinet de conseil juridique et fiscal pour PME algériennes."
+      }
+    }
+  },
+  "steps": {
+    "eyebrow": "Comment on travaille",
+    "headline": "Du premier appel à la mise en ligne.",
+    "scrollHint": "Continuez à défiler",
+    "guarantee": "Vous ne payez rien avant d’avoir vu votre design.",
+    "badges": {
+      "free": "Gratuit",
+      "deposit": "20 %",
+      "balance": "80 %"
+    },
+    "cta": "Réserver mon appel gratuit",
+    "ctaNote": "Gratuit · Sans engagement",
+    "goToStep": "Aller à l’étape {{n}}",
+    "items": [
+      {
+        "step": "01",
+        "title": "Appel gratuit avec notre expert",
+        "desc": "Un expert écoute votre activité et vos objectifs."
+      },
+      {
+        "step": "02",
+        "title": "Votre design, offert",
+        "desc": "Vous voyez à quoi ressemblera votre projet avant de vous engager."
+      },
+      {
+        "step": "03",
+        "title": "Contrat et acompte de 20 %",
+        "desc": "On vous envoie le contrat. Vous réglez 20 % pour lancer le développement."
+      },
+      {
+        "step": "04",
+        "title": "On développe, vous suivez",
+        "desc": "On construit votre projet et vous suivez l'avancement."
+      },
+      {
+        "step": "05",
+        "title": "Mise en ligne et solde de 80 %",
+        "desc": "On met votre projet en ligne, puis vous réglez les 80 % restants."
+      }
+    ],
+    "visualChips": {
+      "discoveryCall": "Appel gratuit",
+      "freeDesign": "Gratuit",
+      "deposit20": "20 % acompte",
+      "progress": "65 % terminé",
+      "online80": "En ligne · 80 %"
+    },
+    "visuals": {
+      "callLive": "Appel en direct",
+      "nameExpert": "Expert Nebnou",
+      "nameClient": "Vous",
+      "callCaption1": "On veut une boutique en ligne avec paiement à la livraison.",
+      "callCaption2": "Parfait. On la fait en français et en arabe, pensée pour le mobile.",
+      "callCaption3": "Super, vous pouvez me montrer un design ?",
+      "notes": "Notes du projet",
+      "noteStore": "Boutique en ligne",
+      "noteCod": "Paiement à la livraison",
+      "noteLang": "FR + AR",
+      "noteMobile": "Mobile d’abord",
+      "designSending": "Envoi de votre design…",
+      "designApproved": "Design approuvé",
+      "loveIt": "J’adore !",
+      "contractTitle": "Contrat de service",
+      "signature": "Signature client",
+      "contractSent": "Contrat envoyé",
+      "contractSigned": "Contrat signé",
+      "depositReceived": "Acompte reçu",
+      "nameDev": "Développeur Nebnou",
+      "trackLink": "Lien de suivi privé",
+      "taskHome": "Accueil",
+      "taskShop": "Boutique",
+      "taskOrders": "Commandes",
+      "taskTests": "Tests",
+      "live": "Site en ligne",
+      "feedback": "Merci ! Le site est exactement ce qu’on voulait.",
+      "rating": "Note : 5 sur 5"
+    }
+  },
+  "commitment": {
+    "eyebrow": "Notre engagement",
+    "headline": "Un projet clair avance mieux.",
+    "item1": "Un interlocuteur",
+    "item2": "Un périmètre clair",
+    "item3": "Un lancement accompagné",
+    "cta": "Décrire mon projet"
+  },
+  "cta": {
+    "eyebrow": "Faisons connaissance",
+    "headline": "Parlons de votre prochain projet.",
+    "paragraph": "Remplissez un court formulaire, puis choisissez l'heure de votre appel. C'est gratuit et sans engagement.",
+    "button": "Réserver mon appel gratuit"
+  },
+  "footer": {
+    "tagline": "Studio web et logiciel, Algérie.",
+    "navProjects": "Projets",
+    "navSteps": "Étapes",
+    "navBooking": "Réserver un appel",
+    "location": "Algérie",
+    "copyright": "© 2026 Nebnou Studio. Tous droits réservés.",
+    "availability": "Disponible · T4 2026"
+  }
+}

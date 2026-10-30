@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --nebnou-orange: #FF7A3D;
+    --nebnou-clay: #E2591B;
+    --nebnou-blue: #1E4DD8;
+    --nebnou-ink: #1B1F2A;
+    --nebnou-sand: #FFF7EE;
+    --nebnou-white: #FFFFFF;
+    --nebnou-mint: #22B893;
+    --nebnou-stone: #6B7280;
+    --nebnou-border: #EADFD2;
+
+    --font-display: 'Readex Pro', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-arabic: 'IBM Plex Sans Arabic', 'Readex Pro', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--nebnou-sand);
+    color: var(--nebnou-ink);
+    font-family: var(--font-body);
+  }
+
+  html[dir="rtl"] {
+    font-family: var(--font-arabic);
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  /* Accessible focus ring */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible {
+    outline: 3px solid var(--nebnou-blue) !important;
+    outline-offset: 3px !important;
+  }
+
+  /* Section anchor offsets for fixed header */
+  section[id] {
+    scroll-margin-top: 80px;
+  }
+}
+
+/* Custom Utilities */
+.bg-sand { background-color: var(--nebnou-sand); }
+.bg-ink { background-color: var(--nebnou-ink); }
+.bg-orange { background-color: var(--nebnou-orange); }
+.bg-clay { background-color: var(--nebnou-clay); }
+.bg-blue { background-color: var(--nebnou-blue); }
+.bg-mint { background-color: var(--nebnou-mint); }
+.bg-surface { background-color: var(--nebnou-white); }
+
+.text-ink { color: var(--nebnou-ink); }
+.text-sand { color: var(--nebnou-sand); }
+.text-stone { color: var(--nebnou-stone); }
+.text-orange { color: var(--nebnou-orange); }
+.text-blue { color: var(--nebnou-blue); }
+
+.border-nebnou { border-color: var(--nebnou-border); }
+.border-ink { border-color: var(--nebnou-ink); }
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.25s; }
+.stagger-3 { animation-delay: 0.4s; }
+.stagger-4 { animation-delay: 0.55s; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
