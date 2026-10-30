@@ -94,6 +94,29 @@
     "headline": "Des outils web taillés pour faire grandir votre activité.",
     "subtitle": "Boutiques e-commerce optimisées COD 58 wilayas, vitrines d'entreprises bilingues et plateformes sur mesure : voici ce que nous bâtissons pour nos clients.",
     "explore": "Découvrir nos créations ↓",
+    "eyebrowLabel": "Nos réalisations",
+    "headline1": "Chaque projet,",
+    "headline2": "a sa signature.",
+    "exploreLabel": "Découvrir nos créations",
+    "tabAll": "Tous les projets",
+    "tabs": {
+      "ecommerce": "E-commerce & COD",
+      "platforms": "Plateformes & Logiciels",
+      "showcase": "Sites vitrines"
+    },
+    "categories": {
+      "ecommerce": "E-commerce",
+      "platforms": "Plateforme",
+      "showcase": "Site vitrine"
+    },
+    "filtersLabel": "Filtrer les projets",
+    "listLabel": "Projets",
+    "viewLabel": "Mode d’affichage",
+    "viewGallery": "Galerie",
+    "viewIndex": "Index",
+    "prev": "Projet précédent",
+    "next": "Projet suivant",
+    "coverTags": "Design · Développement",
     "filterAll": "Tous les projets ({{count}})",
     "filterEcommerce": "E-commerce & COD ({{count}})",
     "filterPlatforms": "Plateformes & Logiciels ({{count}})",
@@ -116,6 +139,7 @@
       "safir": {
         "title": "Safir Mode — Prêt-à-porter",
         "desc": "Boutique en ligne pensée pour le marché algérien : formulaire express de commande COD (paiement à la livraison) et calcul automatique des frais de livraison par wilaya.",
+        "sector": "Mode et prêt-à-porter",
         "tags": [
           "Formulaire COD",
           "58 Wilayas",
@@ -125,6 +149,7 @@
       "clinique": {
         "title": "Clinique El-Bahdja — Centre Médical",
         "desc": "Site vitrine médical bilingue (arabe et français) avec présentation détaillée des pôles de santé et prise de rendez-vous directe.",
+        "sector": "Santé",
         "tags": [
           "Bilingue FR/AR",
           "Prise de RDV",
@@ -134,6 +159,7 @@
       "dzfleet": {
         "title": "DZ Fleet — Gestion Logistique",
         "desc": "Portail web privé de gestion de flotte et de suivi des colis pour les distributeurs et transporteurs régionaux.",
+        "sector": "Logistique",
         "tags": [
           "Portail web",
           "Suivi en temps réel",
@@ -143,6 +169,7 @@
       "darzellige": {
         "title": "Dar Zellige — Artisanat & Céramique",
         "desc": "Boutique et catalogue interactif mettant en valeur l'artisanat traditionnel avec commande directe et export de devis.",
+        "sector": "Artisanat",
         "tags": [
           "Catalogue produit",
           "Haute résolution",
@@ -152,6 +179,7 @@
       "academiadz": {
         "title": "Académie Numérique DZ — Formations",
         "desc": "Plateforme d'apprentissage en ligne avec inscription aux cours, consultation des modules et délivrance d'attestations.",
+        "sector": "Formation en ligne",
         "tags": [
           "E-learning",
           "Espace étudiant",
@@ -161,6 +189,7 @@
       "cabinet": {
         "title": "Cabinet Benali & Associés — Juridique",
         "desc": "Présence web institutionnelle haut de gamme pour un cabinet juridique, conçue pour rassurer les PME et grands comptes.",
+        "sector": "Conseil juridique",
         "tags": [
           "Corporate",
           "Identité premium",

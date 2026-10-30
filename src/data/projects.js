@@ -1,95 +1,81 @@
-/**
- * Projects data for Nebnou Studio
- * To add real projects:
- * 1. Add image to public/projects/ or assets
- * 2. Set isExample: false
- * 3. Update titleKey/descKey or provide direct titles
- */
+// Projects shown in the landing page.
+// To add a real project: add an entry with isExample: false, a liveUrl,
+// an image (put the file in src/assets/projects/ and import it), and add
+// its title and description under "projects.items" in fr.json and ar.json.
+//
+// category: 'ecommerce' | 'platforms' | 'showcase'
 
 export const projects = [
   {
-    id: '01',
+    id: 'safir',
     slug: 'safir-mode',
     titleKey: 'projects.items.safir.title',
     descKey: 'projects.items.safir.desc',
-    tagsKey: 'projects.items.safir.tags',
-    category: 'ecommerce', // 'ecommerce' | 'platforms' | 'showcase'
-    domain: 'safir-mode.dz',
-    year: '2026',
+    sectorKey: 'projects.items.safir.sector',
+    category: 'ecommerce',
+    year: 2026,
     image: null,
-    liveUrl: 'https://safir-mode.dz',
+    liveUrl: null,
     isExample: true,
   },
   {
-    id: '02',
+    id: 'clinique',
     slug: 'clinique-el-bahdja',
     titleKey: 'projects.items.clinique.title',
     descKey: 'projects.items.clinique.desc',
-    tagsKey: 'projects.items.clinique.tags',
+    sectorKey: 'projects.items.clinique.sector',
     category: 'showcase',
-    domain: 'clinique-elbahdja.dz',
-    year: '2026',
+    year: 2026,
     image: null,
-    liveUrl: 'https://clinique-elbahdja.dz',
+    liveUrl: null,
     isExample: true,
   },
   {
-    id: '03',
+    id: 'dzfleet',
     slug: 'dz-fleet-logistics',
     titleKey: 'projects.items.dzfleet.title',
     descKey: 'projects.items.dzfleet.desc',
-    tagsKey: 'projects.items.dzfleet.tags',
+    sectorKey: 'projects.items.dzfleet.sector',
     category: 'platforms',
-    domain: 'app.dzfleet.com',
-    year: '2026',
+    year: 2026,
     image: null,
     liveUrl: null,
     isExample: true,
   },
   {
-    id: '04',
-    slug: 'dar-zellige',
+    id: 'darzellige',
+    slug: 'dar-zellige-artisanat',
     titleKey: 'projects.items.darzellige.title',
     descKey: 'projects.items.darzellige.desc',
-    tagsKey: 'projects.items.darzellige.tags',
+    sectorKey: 'projects.items.darzellige.sector',
     category: 'ecommerce',
-    domain: 'darzellige-art.dz',
-    year: '2026',
+    year: 2025,
     image: null,
     liveUrl: null,
     isExample: true,
   },
   {
-    id: '05',
+    id: 'academiadz',
     slug: 'academie-numerique-dz',
     titleKey: 'projects.items.academiadz.title',
     descKey: 'projects.items.academiadz.desc',
-    tagsKey: 'projects.items.academiadz.tags',
+    sectorKey: 'projects.items.academiadz.sector',
     category: 'platforms',
-    domain: 'academie-dz.com',
-    year: '2026',
-    image: null,
-    liveUrl: 'https://academie-dz.com',
-    isExample: true,
-  },
-  {
-    id: '06',
-    slug: 'cabinet-benali',
-    titleKey: 'projects.items.cabinet.title',
-    descKey: 'projects.items.cabinet.desc',
-    tagsKey: 'projects.items.cabinet.tags',
-    category: 'showcase',
-    domain: 'benali-avocats.dz',
-    year: '2026',
+    year: 2025,
     image: null,
     liveUrl: null,
     isExample: true,
   },
-];
-
-export const projectCategories = [
-  { key: 'all', labelKey: 'projects.filterAll' },
-  { key: 'ecommerce', labelKey: 'projects.filterEcommerce' },
-  { key: 'platforms', labelKey: 'projects.filterPlatforms' },
-  { key: 'showcase', labelKey: 'projects.filterShowcase' },
+  {
+    id: 'cabinet',
+    slug: 'cabinet-benali',
+    titleKey: 'projects.items.cabinet.title',
+    descKey: 'projects.items.cabinet.desc',
+    sectorKey: 'projects.items.cabinet.sector',
+    category: 'showcase',
+    year: 2025,
+    image: null,
+    liveUrl: null,
+    isExample: true,
+  },
 ];
