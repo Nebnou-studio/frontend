@@ -90,46 +90,58 @@
     }
   },
   "projects": {
-    "eyebrow": "Nos projets · {{count}}",
-    "headline": "Chaque projet a sa signature.",
-    "subtitle": "Sites, boutiques et plateformes, pensés autour de chaque marque et de ses clients.",
-    "explore": "Explorer les projets ↓",
-    "filterAll": "Tous · {{count}}",
-    "filterEcommerce": "E-commerce · {{count}}",
-    "filterPlatforms": "Plateformes · {{count}}",
-    "filterShowcase": "Sites vitrines · {{count}}",
-    "displayedCount": "{{count}} projets affichés",
-    "displayedCountSingle": "1 projet affiché",
-    "liveSite": "Site en ligne",
-    "viewProject": "Voir le projet",
-    "exampleBadge": "Exemple",
-    "endQuestion": "Et si on donnait forme à votre projet ?",
-    "endCta": "Réserver un appel gratuit",
+    "eyebrow": "Nos réalisations · Studio Nebnou",
+    "headline": "Des outils web taillés pour faire grandir votre activité.",
+    "subtitle": "Boutiques e-commerce optimisées COD 58 wilayas, vitrines d'entreprises bilingues et plateformes sur mesure : voici ce que nous bâtissons pour nos clients.",
+    "explore": "Découvrir nos créations ↓",
+    "filterAll": "Tous les projets ({{count}})",
+    "filterEcommerce": "E-commerce & COD ({{count}})",
+    "filterPlatforms": "Plateformes & Logiciels ({{count}})",
+    "filterShowcase": "Sites vitrines ({{count}})",
+    "displayedCount": "{{count}} projets présentés",
+    "displayedCountSingle": "1 projet présenté",
+    "liveSite": "En production",
+    "viewProject": "Voir le site en direct",
+    "viewInternal": "Plateforme privée",
+    "exampleBadge": "Projet de démonstration",
+    "endEyebrow": "Parlons de votre projet",
+    "endQuestion": "Votre activité mérite un site web qui inspire confiance et génère des résultats.",
+    "endSubtitle": "Discutez 20 minutes avec notre équipe. On analyse vos besoins et on vous prépare une première maquette personnalisée, 100 % gratuite et sans aucun engagement.",
+    "endCta": "Réserver mon appel gratuit",
+    "badgeNoCommitment": "100 % gratuit & sans engagement",
+    "badgeFreeDesign": "Maquette offerte avant contrat",
+    "badgeFastReply": "Conseil adapté au marché DZ",
     "trustClients": "Ils nous font confiance",
     "items": {
       "safir": {
-        "title": "Safir Mode — Boutique en ligne",
-        "desc": "Boutique de prêt-à-porter avec formulaire de commande express COD et calcul automatique de livraison par wilaya."
+        "title": "Safir Mode — Prêt-à-porter",
+        "desc": "Boutique en ligne pensée pour le marché algérien : formulaire express de commande COD (paiement à la livraison) et calcul automatique des frais de livraison par wilaya.",
+        "tags": ["Formulaire COD", "58 Wilayas", "Mobile-first"]
       },
       "clinique": {
-        "title": "Clinique El-Bahdja",
-        "desc": "Site vitrine médical bilingue avec présentation des spécialités et prise de rendez-vous en ligne simplifiée."
+        "title": "Clinique El-Bahdja — Centre Médical",
+        "desc": "Site vitrine médical bilingue (arabe et français) avec présentation détaillée des pôles de santé et prise de rendez-vous directe.",
+        "tags": ["Bilingue FR/AR", "Prise de RDV", "SEO Local"]
       },
       "dzfleet": {
-        "title": "DZ Fleet Logistics",
-        "desc": "Plateforme web de suivi de tournées et gestion de livraison dernier kilomètre pour transporteurs locaux."
+        "title": "DZ Fleet — Gestion Logistique",
+        "desc": "Portail web privé de gestion de flotte et de suivi des colis pour les distributeurs et transporteurs régionaux.",
+        "tags": ["Portail web", "Suivi en temps réel", "Outil interne"]
       },
       "darzellige": {
-        "title": "Dar Zellige Artisanat",
-        "desc": "Catalogue en ligne et commande directe pour un atelier d'artisanat et céramique d'art traditionnel."
+        "title": "Dar Zellige — Artisanat & Céramique",
+        "desc": "Boutique et catalogue interactif mettant en valeur l'artisanat traditionnel avec commande directe et export de devis.",
+        "tags": ["Catalogue produit", "Haute résolution", "Panier express"]
       },
       "academiadz": {
-        "title": "Académie Numérique DZ",
-        "desc": "Plateforme d'apprentissage en ligne avec inscription aux cours, espaces étudiants et certification."
+        "title": "Académie Numérique DZ — Formations",
+        "desc": "Plateforme d'apprentissage en ligne avec inscription aux cours, consultation des modules et délivrance d'attestations.",
+        "tags": ["E-learning", "Espace étudiant", "Paiement local"]
       },
       "cabinet": {
-        "title": "Cabinet Benali & Associés",
-        "desc": "Site vitrine institutionnel pour un cabinet de conseil juridique et fiscal pour PME algériennes."
+        "title": "Cabinet Benali & Associés — Juridique",
+        "desc": "Présence web institutionnelle haut de gamme pour un cabinet juridique, conçue pour rassurer les PME et grands comptes.",
+        "tags": ["Corporate", "Identité premium", "Sécurité"]
       }
     }
   },
