@@ -116,32 +116,56 @@
       "safir": {
         "title": "Safir Mode — Prêt-à-porter",
         "desc": "Boutique en ligne pensée pour le marché algérien : formulaire express de commande COD (paiement à la livraison) et calcul automatique des frais de livraison par wilaya.",
-        "tags": ["Formulaire COD", "58 Wilayas", "Mobile-first"]
+        "tags": [
+          "Formulaire COD",
+          "58 Wilayas",
+          "Mobile-first"
+        ]
       },
       "clinique": {
         "title": "Clinique El-Bahdja — Centre Médical",
         "desc": "Site vitrine médical bilingue (arabe et français) avec présentation détaillée des pôles de santé et prise de rendez-vous directe.",
-        "tags": ["Bilingue FR/AR", "Prise de RDV", "SEO Local"]
+        "tags": [
+          "Bilingue FR/AR",
+          "Prise de RDV",
+          "SEO Local"
+        ]
       },
       "dzfleet": {
         "title": "DZ Fleet — Gestion Logistique",
         "desc": "Portail web privé de gestion de flotte et de suivi des colis pour les distributeurs et transporteurs régionaux.",
-        "tags": ["Portail web", "Suivi en temps réel", "Outil interne"]
+        "tags": [
+          "Portail web",
+          "Suivi en temps réel",
+          "Outil interne"
+        ]
       },
       "darzellige": {
         "title": "Dar Zellige — Artisanat & Céramique",
         "desc": "Boutique et catalogue interactif mettant en valeur l'artisanat traditionnel avec commande directe et export de devis.",
-        "tags": ["Catalogue produit", "Haute résolution", "Panier express"]
+        "tags": [
+          "Catalogue produit",
+          "Haute résolution",
+          "Panier express"
+        ]
       },
       "academiadz": {
         "title": "Académie Numérique DZ — Formations",
         "desc": "Plateforme d'apprentissage en ligne avec inscription aux cours, consultation des modules et délivrance d'attestations.",
-        "tags": ["E-learning", "Espace étudiant", "Paiement local"]
+        "tags": [
+          "E-learning",
+          "Espace étudiant",
+          "Paiement local"
+        ]
       },
       "cabinet": {
         "title": "Cabinet Benali & Associés — Juridique",
         "desc": "Présence web institutionnelle haut de gamme pour un cabinet juridique, conçue pour rassurer les PME et grands comptes.",
-        "tags": ["Corporate", "Identité premium", "Sécurité"]
+        "tags": [
+          "Corporate",
+          "Identité premium",
+          "Sécurité"
+        ]
       }
     }
   },
