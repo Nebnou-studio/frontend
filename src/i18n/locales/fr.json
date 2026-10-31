@@ -301,5 +301,116 @@
     "location": "Algérie",
     "copyright": "© 2026 Nebnou Studio. Tous droits réservés.",
     "availability": "Disponible · T4 2026"
+  },
+  "funnel": {
+    "pageTitle": "Réserver un appel gratuit · Nebnou",
+    "skip": "Aller au contenu",
+    "stepOf": "Étape {{current}} sur {{total}}",
+    "steps": {
+      "video": "Vidéo",
+      "questions": "Questions",
+      "booking": "Réservation"
+    },
+    "video": {
+      "eyebrow": "Bienvenue chez Nebnou",
+      "title": "Découvrez comment on construit votre site",
+      "subtitle": "Regardez cette courte vidéo : vous saurez exactement ce que vous obtenez, étape par étape.",
+      "videoLabel": "Vidéo de présentation de Nebnou",
+      "noVideo": "La vidéo de présentation arrive bientôt.",
+      "hint": "Regardez la vidéo pour continuer",
+      "ready": "Merci d’avoir regardé ! Vous pouvez continuer.",
+      "continue": "Continuer"
+    },
+    "q": {
+      "counter": "Question {{n}} sur {{total}}",
+      "next": "Continuer",
+      "finish": "Choisir mon horaire",
+      "back": "Retour"
+    },
+    "q1": {
+      "title": "Dans quel domaine travaillez-vous ?",
+      "hint": "Choisissez celui qui ressemble le plus à votre activité.",
+      "options": {
+        "commerce": "Commerce / Boutique",
+        "restaurant": "Restaurant / Alimentation",
+        "services": "Services aux entreprises",
+        "education": "Formation / Éducation",
+        "health": "Santé / Bien-être",
+        "realestate": "Immobilier",
+        "industry": "Industrie / Production",
+        "other": "Autre"
+      },
+      "otherLabel": "Précisez votre domaine",
+      "otherPlaceholder": "Ex. : couture, agriculture…",
+      "required": "Choisissez un domaine pour continuer.",
+      "otherRequired": "Précisez votre domaine d’activité."
+    },
+    "q2": {
+      "title": "Quel problème voulez-vous résoudre avec un site web ?",
+      "hint": "Quelques phrases suffisent. Pas besoin de termes techniques.",
+      "placeholder": "Ex. : mes clients ne me trouvent pas sur Google…",
+      "suggestionsLabel": "Des idées pour vous aider",
+      "suggestions": {
+        "s1": "Je n’ai pas encore de site web",
+        "s2": "Mes clients ne me trouvent pas sur Google",
+        "s3": "Je perds des commandes sur les réseaux sociaux",
+        "s4": "Mon site actuel ne me ramène pas de clients"
+      },
+      "tooShort": "Écrivez au moins 10 caractères."
+    },
+    "q3": {
+      "title": "Avez-vous déjà essayé une autre solution ?",
+      "hint": "Une agence, un freelance, un créateur de site, les réseaux sociaux…",
+      "yes": "Oui",
+      "no": "Non",
+      "detailsLabel": "Laquelle ? (facultatif)",
+      "detailsPlaceholder": "Ex. : une page Facebook, un site Wix…",
+      "required": "Répondez par oui ou non pour continuer."
+    },
+    "booking": {
+      "title": "Réservez votre appel gratuit",
+      "subtitle": "Laissez-nous vos coordonnées et choisissez l’heure qui vous arrange.",
+      "contactTitle": "Vos coordonnées",
+      "name": {
+        "label": "Nom complet",
+        "placeholder": "Ex. : Karim Benali",
+        "error": "Entrez votre nom."
+      },
+      "phone": {
+        "label": "Téléphone",
+        "placeholder": "0555 12 34 56",
+        "error": "Entrez un numéro algérien valide (ex. 0555 12 34 56)."
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "vous@exemple.com",
+        "error": "Entrez une adresse e-mail valide."
+      },
+      "calendarTitle": "Choisissez la date et l’heure",
+      "timezoneNote": "Heures affichées en heure d’Alger.",
+      "tzShort": "heure d’Alger",
+      "prevMonth": "Mois précédent",
+      "nextMonth": "Mois suivant",
+      "loadingSlots": "Chargement des créneaux…",
+      "noSlots": "Aucun créneau ce jour-là. Choisissez un autre jour.",
+      "pickDay": "Choisissez un jour pour voir les horaires.",
+      "slotsFor": "Horaires du {{date}}",
+      "selected": "Votre rendez-vous",
+      "slotRequired": "Choisissez un créneau pour continuer.",
+      "confirm": "Confirmer mon appel",
+      "confirming": "Envoi en cours…",
+      "reassure": "Gratuit · Sans engagement",
+      "privacy": "Vos informations servent uniquement à organiser votre appel.",
+      "slotTaken": "Ce créneau vient d’être pris. Choisissez-en un autre.",
+      "genericError": "Une erreur est survenue. Réessayez dans un instant.",
+      "retry": "Réessayer"
+    },
+    "done": {
+      "title": "C’est confirmé !",
+      "greeting": "Merci {{name}}.",
+      "text": "Votre appel gratuit est réservé pour :",
+      "linkNote": "Votre expert Nebnou vous contactera à cette heure. Le lien de la réunion vous sera envoyé par e-mail.",
+      "home": "Retour à l’accueil"
+    }
   }
 }
