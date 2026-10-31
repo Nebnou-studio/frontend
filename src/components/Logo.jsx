@@ -8,7 +8,7 @@ export const Logo = ({ reverse = false, className = '' }) => {
 
   return (
     <a
-      href="#"
+      href="http://localhost:5173/"
       className={`inline-flex items-center gap-2.5 group transition-transform duration-200 hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1E4DD8] rounded-lg ${className}`}
       aria-label="Nebnou Studio Home"
     >

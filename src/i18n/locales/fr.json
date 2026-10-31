@@ -306,6 +306,9 @@
     "pageTitle": "Réserver un appel gratuit · Nebnou",
     "skip": "Aller au contenu",
     "stepOf": "Étape {{current}} sur {{total}}",
+    "header": {
+      "free": "Appel gratuit"
+    },
     "steps": {
       "video": "Vidéo",
       "questions": "Questions",
@@ -320,6 +323,22 @@
       "hint": "Regardez la vidéo pour continuer",
       "ready": "Merci d’avoir regardé ! Vous pouvez continuer.",
       "continue": "Continuer"
+    },
+    "qpanel": {
+      "crumb": "Votre projet",
+      "title": "Parlez-nous de votre activité.",
+      "subtitle": "Trois réponses suffisent pour préparer votre appel.",
+      "progressLabel": "Votre projet prend forme",
+      "labels": {
+        "activity": "Votre domaine",
+        "problem": "Votre besoin",
+        "tried": "Votre expérience"
+      },
+      "pending": "À préciser",
+      "edit": "Modifier : {{step}}",
+      "remaining": "Bien joué, encore {{n}}.",
+      "lastOne": "Dernière question.",
+      "reassure": "Un premier échange, sans engagement."
     },
     "q": {
       "counter": "Question {{n}} sur {{total}}",
